@@ -7,6 +7,11 @@
     "start": "node index.js",
     "test": "node node_modules/jest/bin/jest.js"
   },
+  "jest": {
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
