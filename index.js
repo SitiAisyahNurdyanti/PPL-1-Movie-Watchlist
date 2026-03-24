@@ -73,6 +73,10 @@ app.delete("/movies/:id", (req, res) => {
     });
 });
 
-app.listen(3000, () =>{
-    console.log("server running di port 3000");
-});
+module.exports = app;
+
+if (require.main === module){
+    app.listen(3000, () => {
+        console.log("server running di port 3000")
+    });
+}
